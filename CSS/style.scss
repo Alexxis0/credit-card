@@ -1,23 +1,43 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     font-size: 14px;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    .container_card{
+    font-family: 'Roboto', sans-serif;
+
+    .container_card {
+        position: relative;
         display: flex;
         justify-content: center;
-        width: 720px;
-        height: 500px;
-        border: 2px solid black;
+        width: 688px;
+        height: 432px;
+        background-color: #FF3CAC;
+        background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+        box-shadow: 0px 16px 25px 7px rgba(0, 0, 0, 0.50);
         border-radius: 10px;
+        &_number{
+            position: absolute;
+            left: 60px;
+            bottom: 150px;
+            font-size: 3rem;
+        }
+        &_date{
+            position: absolute;
+            right: 50px;
+            bottom: 40px;
+            font-size: 3rem;
+
+        }
     }
 }
