@@ -23,9 +23,5 @@ fetch("https://randomuser.me/api/")
                 Math.ceil(Math.random() * (max - min) + min)
             );
         }
-        function dateRandom() {
-
-        }
         cardNumber.textContent = numberRamdom(1000, 9999);
-
     });
